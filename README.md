@@ -48,9 +48,9 @@ description provided which explains the deviation, example:
 ### common-build-dependencies-bootstrap
 
  * `autoconf`
-  * doesn't provide files for emacs
-  * doesn't run test-suite
-  * doesn't provide documentation
+   * doesn't provide files for emacs
+   * doesn't run test-suite
+   * doesn't provide documentation
 
 
 ## Requests
