@@ -81,5 +81,8 @@ This list is sorted by priority.
 
  * `libtool`
    * dependency of:
-    * `automake` (test suite)
+     * `automake` (test suite)
 
+ * `libevent`
+   * dependency of:
+     * `memcached`
