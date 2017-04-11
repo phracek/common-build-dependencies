@@ -63,12 +63,68 @@ description provided which explains the deviation, example:
 
 Put requests for packages you require in the `common-build-dependencies` module here via pull request.
 
- * `mariadb`
-    * build dependencies:
-       * `compat-openssl10 libaio libedit multilib-rpm-config pcre perl-generators selinux-policy`
-    * runtime dependencies:
-       * `compat-openssl10 mariadb perl`
-  
+### Prioritized list
+
+This list is sorted by priority.
+
+ * multilib-rpm-config
+   * dependency of:
+     * `mariadb`
+
+ * `help2man`
+   * common build dependency for GNU projects
+   * dependency of:
+     * `autoconf`
+
+ * `libtool`
+   * dependency of:
+    * `automake` (test suite)
+
+ * `doxygen`
+   * dependency of:
+    * `dhcp-server`
+
+ * `emacs`
+   * dependency of:
+     * `autoconf`
+     * `automake` (test suite)
+
+ * `erlang`
+   * dependency of:
+     * `autoconf`
+
+
+## Done
+
+This is a list of packages which are already done. Feel free to update the
+dependency tree.
+
+ * `autoconf`
+   * dependency of:
+     * `dhcp-server`
+
+ * `automake`
+   * dependency of:
+     * `dhcp-server`
+
+
+## Unknown
+
+It is unknown to me where should be these packages placed
+
+ * `selinux-policy`
+   * dependency of:
+     * `mariadb`
+ * `compat-openssl10 `
+   * dependency of:
+     * `mariadb`
+
+
+## Unprocessed
+
+Ready for procesing.
+
+
  * `mongodb`
     * build dependencies:
        * `asio boost gcc gperftools icu libstemmer python-pymongo scons snappy valgrind yaml-cpp yaml-cpp03`
@@ -103,52 +159,12 @@ Put requests for packages you require in the `common-build-dependencies` module 
      * `autoconf checksec cmake libyaml multilib-rpm-config systemtap`
    * runtime dependecies:
      * `ruby rubypick`
-    
+
  * `bind`
    * build dependecies:
      * `autoconf docbook-style-xsl GeoIP mariadb postgresql python3`
    * runtime dependecies:
      * `bind`
-    
-### Prioritized list
-
-This list is sorted by priority.
-
- * `help2man`
-   * common build dependency for GNU projects
-   * dependency of:
-     * `autoconf`
-
- * `libtool`
-   * dependency of:
-    * `automake` (test suite)
-
- * `doxygen`
-   * dependency of:
-    * `dhcp-server`
-
- * `emacs`
-   * dependency of:
-     * `autoconf`
-     * `automake` (test suite)
-
- * `erlang`
-   * dependency of:
-     * `autoconf`
-
-
-## Done
-
-This is a list of packages which are already done. Feel free to update the
-dependency tree.
-
- * `autoconf`
-   * dependency of:
-    * `dhcp-server`
-
- * `automake`
-   * dependency of:
-    * `dhcp-server`
 
 
 ## Denied requests
@@ -156,7 +172,22 @@ dependency tree.
 Packages bellow are here for tracking purposes. None of them belong to this
 module and should be placed elsewhere.
 
-
  * `bind99`
    * dependency of:
-    * `dhcp-server`
+     * `dhcp-server`
+ * `perl-generators`
+   * part of perl module
+   * dependency of:
+     * `mariadb`
+ * `pcre`
+   * part of base-runtime
+   * dependency of:
+     * `mariadb`
+ * `libaio`
+   * part of base-runtime
+   * dependency of:
+     * `mariadb`
+ * `libedit`
+   * part of base-runtime
+   * dependency of:
+     * `mariadb`
