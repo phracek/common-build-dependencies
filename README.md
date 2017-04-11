@@ -101,6 +101,7 @@ dependency tree.
      * `dhcp-server`
      * `python2`
      * `python3`
+     * `bind`
 
  * `automake`
    * dependency of:
@@ -146,12 +147,6 @@ Ready for procesing.
      * `autoconf checksec cmake libyaml multilib-rpm-config systemtap`
    * runtime dependecies:
      * `ruby rubypick`
-
- * `bind`
-   * build dependecies:
-     * `autoconf docbook-style-xsl GeoIP mariadb postgresql python3`
-   * runtime dependecies:
-     * `bind`
 
 
 ## Denied requests
@@ -268,6 +263,26 @@ module and should be placed elsewhere.
    * should be part of shared-userspace
    * dependency of:
      * `nodejs`
+ * `docbook-style-xsl`
+   * should be part of shared-userspace
+   * dependency of:
+     * `bind`
+ * `GeoIP`
+   * should be part of shared-userspace
+   * dependency of:
+     * `bind`
+ * `mariadb`
+   * part of mariadb module
+   * dependency of:
+     * `bind`
+ * `python3`
+   * part of python3 module
+   * dependency of:
+     * `bind`
+ * `postgresql`
+   * part of postgresql module
+   * dependency of:
+     * `bind`
 
 
 ## Invalid requests
