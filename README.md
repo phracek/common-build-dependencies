@@ -299,6 +299,7 @@ module and should be placed elsewhere.
    * part of mariadb module
    * dependency of:
      * `bind`
+     * `postfix`
  * `python3`
    * part of python3 module
    * dependency of:
@@ -308,6 +309,7 @@ module and should be placed elsewhere.
    * dependency of:
      * `bind`
      * `php`
+     * `postfix`
  * `checksec`
    * should be part of shared-userspace
    * dependency of:
@@ -409,6 +411,9 @@ module and should be placed elsewhere.
    * should be part of shared-userspace
    * dependency of:
      * `docker`
+ * `tinycdb`
+   * dependency of:
+     * `postfix`
 
 
 ## Invalid requests
