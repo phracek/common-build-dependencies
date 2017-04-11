@@ -83,3 +83,14 @@ This list is sorted by priority.
    * dependency of:
     * `automake` (test suite)
 
+ * `tinycdb`
+   * dependency of:
+     * `postfix`
+
+ * `postgresql`
+   * dependency of:
+     * `postfix`
+
+ * `mariadb`
+   * dependency of:
+     * `postfix`
