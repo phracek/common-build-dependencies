@@ -429,6 +429,10 @@ module and should be placed elsewhere.
    * should be part of shared-userspace
    * dependency of:
      * `dovecot`
+ * `libevent`
+   * should be part of shared-userspace
+   * dependency of:
+     * `memcached`
 
 
 ## Invalid requests
