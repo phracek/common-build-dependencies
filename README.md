@@ -87,10 +87,4 @@ This list is sorted by priority.
    * dependency of:
      * `postfix`
 
- * `postgresql`
-   * dependency of:
-     * `postfix`
 
- * `mariadb`
-   * dependency of:
-     * `postfix`
