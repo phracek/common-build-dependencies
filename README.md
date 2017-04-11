@@ -100,6 +100,7 @@ dependency tree.
    * dependency of:
      * `dhcp-server`
      * `python2`
+     * `python3`
 
  * `automake`
    * dependency of:
@@ -133,11 +134,6 @@ Ready for procesing.
 
 
 
- * `python3`
-   * build dependencies:
-     * `autoconf bluez expat libdb4 libX11 mesa systemtap tcl tix tk valgrind`
-   * runtime dependecies: 
-     * `python3`
 
  * `nodejs`
 	  * build dependencies:
@@ -191,6 +187,7 @@ module and should be placed elsewhere.
    * should be part of C runtime module
    * dependency of:
      * `mongodb`
+     * `python3`
  * `boost`
    * part of shared-userspace
    * dependency of:
@@ -228,6 +225,7 @@ module and should be placed elsewhere.
    * should be part of shared-userspace
    * dependency of:
      * `python2`
+     * `python3`
  * `findutils`
    * should be part of shared-userspace
    * dependency of:
@@ -236,10 +234,12 @@ module and should be placed elsewhere.
    * should be part of shared-userspace
    * dependency of:
      * `python2`
+     * `python3`
  * `mesa`
    * should be part of shared-userspace
    * dependency of:
      * `python2`
+     * `python3`
  * `valgrind`
    * should be part of debug tools or C runtime
    * dependency of:
@@ -248,10 +248,24 @@ module and should be placed elsewhere.
    * shared-userspace?
    * dependency of:
      * `python2`
- * `compat-openssl10 `
+     * `python3`
+ * `compat-openssl10`
+   * should be part of debug tools or C runtime
    * dependency of:
      * `mariadb`
      * `python2`
+ * `bluez`
+   * should be part of shared-userspace
+   * dependency of:
+     * `python3`
+ * `libdb4`
+   * should be part of shared-userspace
+   * dependency of:
+     * `python3`
+ * `systemtap`
+   * should be part of debug tools or this module
+   * dependency of:
+     * `python3`
 
 
 ## Invalid requests
