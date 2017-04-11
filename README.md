@@ -414,6 +414,9 @@ module and should be placed elsewhere.
  * `tinycdb`
    * dependency of:
      * `postfix`
+ * `postgresql`
+   * dependency of:
+     * `postfix`
 
 
 ## Invalid requests
