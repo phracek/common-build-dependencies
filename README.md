@@ -1,8 +1,8 @@
 # common-build-dependencies
 
-`common-build-dependencies` is probably the module, which you need to
-`build-require` in order to build your module.
-
+`common-build-dependencies` contains packages to build other packages. Runtime
+dependencies should be placed into
+[shared-userspace](http://pkgs.fedoraproject.org/cgit/modules/shared-userspace.git/).
 This git repository represents two modules:
 
  1. [`common-build-dependencies`](http://pkgs.fedoraproject.org/cgit/modules/common-build-dependencies.git/)
@@ -51,6 +51,9 @@ description provided which explains the deviation, example:
    * doesn't provide files for emacs
    * doesn't run test-suite
    * doesn't provide documentation
+ * `automake`
+   * doesn't run test-suite
+   * doesn't provide documentation
 
 
 ## Requests
@@ -70,6 +73,14 @@ This list is sorted by priority.
    * dependency of:
      * `autoconf`
 
+ * `libtool`
+   * dependency of:
+    * `automake` (test suite)
+
+ * `doxygen`
+   * dependency of:
+    * `dhcp-server`
+
  * `emacs`
    * dependency of:
      * `autoconf`
@@ -79,9 +90,11 @@ This list is sorted by priority.
    * dependency of:
      * `autoconf`
 
- * `libtool`
-   * dependency of:
-    * `automake` (test suite)
+
+## Done
+
+This is a list of packages which are already done. Feel free to update the
+dependency tree.
 
  * `autoconf`
    * dependency of:
@@ -91,10 +104,13 @@ This list is sorted by priority.
    * dependency of:
     * `dhcp-server`
 
- * `bind99`
-   * dependency of:
-    * `dhcp-server`
 
- * `doxygen`
+## Denied requests
+
+Packages bellow are here for tracking purposes. None of them belong to this
+module and should be placed elsewhere.
+
+
+ * `bind99`
    * dependency of:
     * `dhcp-server`
