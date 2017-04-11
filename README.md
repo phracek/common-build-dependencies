@@ -106,6 +106,7 @@ dependency tree.
  * `autoconf`
    * dependency of:
      * `dhcp-server`
+     * `python2`
 
  * `automake`
    * dependency of:
@@ -122,6 +123,7 @@ It is unknown to me where should be these packages placed
  * `compat-openssl10 `
    * dependency of:
      * `mariadb`
+     * `python2`
  * `python-pymongo`
    * dependency of:
      * `mongodb`
@@ -132,11 +134,6 @@ It is unknown to me where should be these packages placed
 Ready for procesing.
 
 
- * `python2`
-	  * build dependencies:
-        * `autoconf compat-openssl10 expat findutils libX11 mesa tcl tix tk valgrind`
-    * runtime dependencies:
-        * `coreutils glibc`
 
  * `python3`
    * build dependencies:
@@ -229,6 +226,30 @@ module and should be placed elsewhere.
    * should be part of shared-userspace
    * dependency of:
      * `mongodb`
+ * `expat`
+   * should be part of shared-userspace
+   * dependency of:
+     * `python2`
+ * `findutils`
+   * should be part of shared-userspace
+   * dependency of:
+     * `python2`
+ * `libX11`
+   * should be part of shared-userspace
+   * dependency of:
+     * `python2`
+ * `mesa`
+   * should be part of shared-userspace
+   * dependency of:
+     * `python2`
+ * `valgrind`
+   * should be part of debug tools or C runtime
+   * dependency of:
+     * `python2`
+ * `tcl, tix, tk`
+   * shared-userspace?
+   * dependency of:
+     * `python2`
 
 
 ## Invalid requests
