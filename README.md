@@ -90,6 +90,7 @@ This list is sorted by priority.
  * `doxygen`
    * dependency of:
      * `dhcp-server`
+     * `libevent`
 
  * `scons`
    * dependency of:
