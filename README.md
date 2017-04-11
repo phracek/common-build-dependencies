@@ -78,11 +78,11 @@ This list is sorted by priority.
 
  * `libtool`
    * dependency of:
-    * `automake` (test suite)
+     * `automake` (test suite)
 
  * `doxygen`
    * dependency of:
-    * `dhcp-server`
+     * `dhcp-server`
 
  * `scons`
    * dependency of:
