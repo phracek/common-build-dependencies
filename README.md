@@ -83,3 +83,18 @@ This list is sorted by priority.
    * dependency of:
     * `automake` (test suite)
 
+ * `autoconf`
+   * dependency of:
+    * `dhcp-server`
+
+ * `automake`
+   * dependency of:
+    * `dhcp-server`
+
+ * `bind99`
+   * dependency of:
+    * `dhcp-server`
+
+ * `doxygen`
+   * dependency of:
+    * `dhcp-server`
