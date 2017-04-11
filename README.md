@@ -184,10 +184,10 @@ module and should be placed elsewhere.
    * dependency of:
      * `mariadb`
  * `libaio`
-   * part of base-runtime
+   * should be placed to shared-userspace
    * dependency of:
      * `mariadb`
  * `libedit`
-   * part of base-runtime
+   * should be placed to shared-userspace
    * dependency of:
      * `mariadb`
