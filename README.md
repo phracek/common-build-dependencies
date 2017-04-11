@@ -84,5 +84,6 @@ This list is sorted by priority.
      * `automake` (test suite)
 
  * `libevent`
+   * libevent depends on `doxygen`
    * dependency of:
      * `memcached`
