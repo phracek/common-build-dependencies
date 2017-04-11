@@ -83,3 +83,23 @@ This list is sorted by priority.
    * dependency of:
     * `automake` (test suite)
 
+ * `clucene`
+   * build dependency (`automake`, `autoconf`)
+   * dependency of:
+     * `dovecot`
+
+ * `mariadb`
+   * dependency of:
+     * `dovecot`
+
+ * `quota`
+   * dependency of:
+     * `dovecot`
+
+ * `openssl`
+   * dependency of:
+     * `dovecot`
+
+ * `postgresql`
+   * dependency of:
+     * `dovecot`
