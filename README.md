@@ -135,11 +135,6 @@ Ready for procesing.
 
 
 
- * `nodejs`
-	  * build dependencies:
-        * `compat-openssl10 gcc icu libuv`
-    * runtime dependencies:
-	     * `libuv`
  * `PHP`
     * build dependecies:
       * `aspell curl enchant exim firebird freetds gd httpd icu libedit libmcrypt libtool libxml2 libxslt net-snmp nginx opensmtpd pcre postfix postgresql recode sendmail sqlite tidy tokyocabinet unixODBC uw-imap`
@@ -197,10 +192,12 @@ module and should be placed elsewhere.
    * part of base-runtime
    * dependency of:
      * `mongodb`
+     * `nodejs`
  * `icu`
    * part of shared-userspace
    * dependency of:
      * `mongodb`
+     * `nodejs`
  * `snappy`
    * part of shared-userspace
    * dependency of:
@@ -254,6 +251,7 @@ module and should be placed elsewhere.
    * dependency of:
      * `mariadb`
      * `python2`
+     * `nodejs`
  * `bluez`
    * should be part of shared-userspace
    * dependency of:
@@ -266,6 +264,10 @@ module and should be placed elsewhere.
    * should be part of debug tools or this module
    * dependency of:
      * `python3`
+ * `libuv`
+   * should be part of shared-userspace
+   * dependency of:
+     * `nodejs`
 
 
 ## Invalid requests
