@@ -300,6 +300,7 @@ module and should be placed elsewhere.
    * dependency of:
      * `bind`
      * `postfix`
+     * `dovecot`
  * `python3`
    * part of python3 module
    * dependency of:
@@ -310,6 +311,7 @@ module and should be placed elsewhere.
      * `bind`
      * `php`
      * `postfix`
+     * `dovecot`
  * `checksec`
    * should be part of shared-userspace
    * dependency of:
@@ -412,11 +414,21 @@ module and should be placed elsewhere.
    * dependency of:
      * `docker`
  * `tinycdb`
+   * should be part of shared-userspace
    * dependency of:
      * `postfix`
- * `postgresql`
+ * `openssl`
+   * part of base-runtime
    * dependency of:
-     * `postfix`
+     * `dovecot`
+ * `clucene`
+   * should be part of shared-userspace
+   * dependency of:
+     * `dovecot`
+ * `quota`
+   * should be part of shared-userspace
+   * dependency of:
+     * `dovecot`
 
 
 ## Invalid requests
