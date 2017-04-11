@@ -84,6 +84,10 @@ This list is sorted by priority.
    * dependency of:
     * `dhcp-server`
 
+ * `scons`
+   * dependency of:
+     * `mongodb`
+
  * `emacs`
    * dependency of:
      * `autoconf`
@@ -118,6 +122,9 @@ It is unknown to me where should be these packages placed
  * `compat-openssl10 `
    * dependency of:
      * `mariadb`
+ * `python-pymongo`
+   * dependency of:
+     * `mongodb`
 
 
 ## Unprocessed
@@ -125,12 +132,6 @@ It is unknown to me where should be these packages placed
 Ready for procesing.
 
 
- * `mongodb`
-    * build dependencies:
-       * `asio boost gcc gperftools icu libstemmer python-pymongo scons snappy valgrind yaml-cpp yaml-cpp03`
-    * runtime dependencies:
-       * `boost yaml-cpp`
-     
  * `python2`
 	  * build dependencies:
         * `autoconf compat-openssl10 expat findutils libX11 mesa tcl tix tk valgrind`
@@ -191,3 +192,49 @@ module and should be placed elsewhere.
    * should be placed to shared-userspace
    * dependency of:
      * `mariadb`
+ * `valgrind`
+   * should be part of C runtime module
+   * dependency of:
+     * `mongodb`
+ * `boost`
+   * part of shared-userspace
+   * dependency of:
+     * `mongodb`
+ * `gcc`
+   * part of C runtime module
+   * part of base-runtime
+   * dependency of:
+     * `mongodb`
+ * `icu`
+   * part of shared-userspace
+   * dependency of:
+     * `mongodb`
+ * `snappy`
+   * part of shared-userspace
+   * dependency of:
+     * `mongodb`
+ * `gperftools`
+   * should be part of shared-userspace
+   * dependency of:
+     * `mongodb`
+ * `libstemmer`
+   * should be part of shared-userspace
+   * dependency of:
+     * `mongodb`
+ * `yaml-cpp`
+   * should be part of shared-userspace
+   * dependency of:
+     * `mongodb`
+ * `yaml-cpp03`
+   * should be part of shared-userspace
+   * dependency of:
+     * `mongodb`
+
+
+## Invalid requests
+
+I was not able to track these packages.
+
+ * `asio`
+   * dependency of:
+     * `mongodb`
