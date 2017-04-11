@@ -73,6 +73,10 @@ This list is sorted by priority.
    * dependency of:
      * `automake` (test suite)
 
+ * `cmake`
+   * dependency of:
+     * `ruby`
+
  * `doxygen`
    * dependency of:
      * `dhcp-server`
@@ -102,6 +106,7 @@ dependency tree.
      * `python2`
      * `python3`
      * `bind`
+     * `ruby`
 
  * `automake`
    * dependency of:
@@ -110,6 +115,7 @@ dependency tree.
  * multilib-rpm-config
    * dependency of:
      * `mariadb`
+     * `ruby`
 
  * `help2man`
    * common build dependency for GNU projects
@@ -142,11 +148,6 @@ Ready for procesing.
     * runtime dependecies:
        * php
 
- * `ruby`
-   * build dependecies:
-     * `autoconf checksec cmake libyaml multilib-rpm-config systemtap`
-   * runtime dependecies:
-     * `ruby rubypick`
 
 
 ## Denied requests
@@ -259,6 +260,7 @@ module and should be placed elsewhere.
    * should be part of debug tools or this module
    * dependency of:
      * `python3`
+     * `ruby`
  * `libuv`
    * should be part of shared-userspace
    * dependency of:
@@ -283,6 +285,14 @@ module and should be placed elsewhere.
    * part of postgresql module
    * dependency of:
      * `bind`
+ * `checksec`
+   * should be part of shared-userspace
+   * dependency of:
+     * `ruby`
+ * `libyaml`
+   * part of shared-userspace
+   * dependency of:
+     * `ruby`
 
 
 ## Invalid requests
