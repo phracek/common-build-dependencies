@@ -43,6 +43,8 @@ description provided which explains the deviation, example:
 ### common-build-dependencies
 
  * `hostname`
+ * `help2man`
+ * `multilib-rpm-config`
 
 
 ### common-build-dependencies-bootstrap
@@ -66,15 +68,6 @@ Put requests for packages you require in the `common-build-dependencies` module 
 ### Prioritized list
 
 This list is sorted by priority.
-
- * multilib-rpm-config
-   * dependency of:
-     * `mariadb`
-
- * `help2man`
-   * common build dependency for GNU projects
-   * dependency of:
-     * `autoconf`
 
  * `libtool`
    * dependency of:
@@ -111,6 +104,15 @@ dependency tree.
  * `automake`
    * dependency of:
      * `dhcp-server`
+
+ * multilib-rpm-config
+   * dependency of:
+     * `mariadb`
+
+ * `help2man`
+   * common build dependency for GNU projects
+   * dependency of:
+     * `autoconf`
 
 
 ## Unknown
