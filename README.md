@@ -122,10 +122,6 @@ It is unknown to me where should be these packages placed
  * `selinux-policy`
    * dependency of:
      * `mariadb`
- * `compat-openssl10 `
-   * dependency of:
-     * `mariadb`
-     * `python2`
  * `python-pymongo`
    * dependency of:
      * `mongodb`
@@ -251,6 +247,10 @@ module and should be placed elsewhere.
  * `tcl, tix, tk`
    * shared-userspace?
    * dependency of:
+     * `python2`
+ * `compat-openssl10 `
+   * dependency of:
+     * `mariadb`
      * `python2`
 
 
