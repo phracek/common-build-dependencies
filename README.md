@@ -72,6 +72,7 @@ This list is sorted by priority.
  * `libtool`
    * dependency of:
      * `automake` (test suite)
+     * `php`
 
  * `cmake`
    * dependency of:
@@ -133,21 +134,26 @@ It is unknown to me where should be these packages placed
  * `python-pymongo`
    * dependency of:
      * `mongodb`
+ * `exim`
+   * dependency of:
+     * `php`
+ * `net-snmp`
+   * dependency of:
+     * `php`
+ * `opensmtpd`
+   * dependency of:
+     * `php`
+ * `sendmail`
+   * dependency of:
+     * `php`
+ * `uw-imap`
+   * dependency of:
+     * `php`
 
 
 ## Unprocessed
 
 Ready for procesing.
-
-
-
-
- * `PHP`
-    * build dependecies:
-      * `aspell curl enchant exim firebird freetds gd httpd icu libedit libmcrypt libtool libxml2 libxslt net-snmp nginx opensmtpd pcre postfix postgresql recode sendmail sqlite tidy tokyocabinet unixODBC uw-imap`
-    * runtime dependecies:
-       * php
-
 
 
 ## Denied requests
@@ -166,6 +172,7 @@ module and should be placed elsewhere.
    * part of base-runtime
    * dependency of:
      * `mariadb`
+     * `php`
  * `libaio`
    * should be placed to shared-userspace
    * dependency of:
@@ -174,6 +181,7 @@ module and should be placed elsewhere.
    * should be placed to shared-userspace
    * dependency of:
      * `mariadb`
+     * `php`
  * `valgrind`
    * should be part of C runtime module
    * dependency of:
@@ -194,6 +202,7 @@ module and should be placed elsewhere.
    * dependency of:
      * `mongodb`
      * `nodejs`
+     * `php`
  * `snappy`
    * part of shared-userspace
    * dependency of:
@@ -285,6 +294,7 @@ module and should be placed elsewhere.
    * part of postgresql module
    * dependency of:
      * `bind`
+     * `php`
  * `checksec`
    * should be part of shared-userspace
    * dependency of:
@@ -293,6 +303,78 @@ module and should be placed elsewhere.
    * part of shared-userspace
    * dependency of:
      * `ruby`
+ * `aspell`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `curl`
+   * part of base-runtime
+   * dependency of:
+     * `php`
+ * `enchant`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `firebird`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `freetds`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `gd`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `httpd`
+   * part of httpd module
+   * dependency of:
+     * `php`
+ * `libmcrypt`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `libmcrypt`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `libxml2`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `libxslt`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `nginx`
+   * part of nginx module
+   * dependency of:
+     * `php`
+ * `postfix`
+   * part of postfix module
+   * dependency of:
+     * `php`
+ * `unixODBC`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `sqlite`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `recode`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `tidy`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
+ * `tokyocabinet`
+   * should be part of shared-userspace
+   * dependency of:
+     * `php`
 
 
 ## Invalid requests
@@ -302,3 +384,9 @@ I was not able to track these packages.
  * `asio`
    * dependency of:
      * `mongodb`
+
+
+## TODO
+
+ * get rid of `should be`
+ * get rid of unknowns
