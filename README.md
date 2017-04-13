@@ -123,7 +123,7 @@ dependency tree.
    * dependency of:
      * `dhcp-server`
 
- * multilib-rpm-config
+ * `multilib-rpm-config`
    * dependency of:
      * `mariadb`
      * `ruby`
