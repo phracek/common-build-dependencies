@@ -56,6 +56,9 @@ description provided which explains the deviation, example:
  * `automake`
    * doesn't run test-suite
    * doesn't provide documentation
+ * `golang`
+   * doesn't run on ppc64
+   * compiled with gcc-go
 
 
 ## Requests
@@ -68,6 +71,11 @@ Put requests for packages you require in the `common-build-dependencies` module 
 ### Prioritized list
 
 This list is sorted by priority.
+
+ * `texinfo`
+   * build-requires plenty of perl packages which are not available yet
+   * dependency of:
+     * `libtool`
 
  * `libtool`
    * dependency of:
