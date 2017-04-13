@@ -85,6 +85,7 @@ This list is sorted by priority.
  * `cmake`
    * dependency of:
      * `ruby`
+     * `docker`
 
  * `doxygen`
    * dependency of:
@@ -130,6 +131,10 @@ dependency tree.
    * common build dependency for GNU projects
    * dependency of:
      * `autoconf`
+
+ * `golang`
+   * dependency of:
+     * `docker`
 
 
 ## Unknown
@@ -371,6 +376,7 @@ module and should be placed elsewhere.
    * should be part of shared-userspace
    * dependency of:
      * `php`
+     * `docker`
  * `recode`
    * should be part of shared-userspace
    * dependency of:
@@ -383,6 +389,26 @@ module and should be placed elsewhere.
    * should be part of shared-userspace
    * dependency of:
      * `php`
+ * `btrfs-progs`
+   * should be part of shared-userspace
+   * dependency of:
+     * `docker`
+ * `device-mapper`
+   * should be part of shared-userspace
+   * dependency of:
+     * `docker`
+ * `git`
+   * should be part of shared-userspace
+   * dependency of:
+     * `docker`
+ * `godep`
+   * should be part of shared-userspace
+   * dependency of:
+     * `docker`
+ * `golang-github-cpuguy83-go-md2man`
+   * should be part of shared-userspace
+   * dependency of:
+     * `docker`
 
 
 ## Invalid requests
